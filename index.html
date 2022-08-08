@@ -1,3 +1,701 @@
-<BODY BGCOLOR="BLUE" COLOR="RED">
-  <P>HELLO HELLO 2ND </P>
-</BODY>
+<!-- Created by 👻Go0rsk1i 👻 -->
+
+<!--15 year old keen learner of Computer programming. This is my first code
+  I have spent one week on preparing this, so please check it out, and dont
+   forget to upvote! There are some flaws but I tried my best.
+   
+   I did this project as a kind of grand test for the important elements in CSS anf Html, 
+   if there is anything else please let me know in comments, I am eager to utilize 
+   sololearns flexibility and want to gain tips and advices from experts, you can also
+    tell if I have done any unnecessary coding, and its efficent way too. After this, 
+    I will move towards animation and JS functions, etc, as I have basic knowledge of JS only.
+    
+     Some problems I am facing :
+      1. I cant style the optgroup (the region selection) inpit using css.
+      Is it possible to design it? I even tried adding both class and id.
+      2. I cant make the code of topnav clean one, (see CSS comment for further info.)
+      If there are other errors or if web appearance can be improved,
+      please let me know in comments, thanks!
+      
+       Atlast, I want to ask some questions related to Careers in this field; 
+       1. Data Science, Machine Learning or AI? (prefference and why) 
+       2. Web development or Game programming?
+        3. Game programming (code) or Developing? 
+        4. Financial side of various careers related to it. 
+        5. The scope and the feasability of related jobs in countries like US,Uk or Europe. 
+        BTW, my preff. are AI, Game programming, g.programming 
+        Maybe you can change my opinion. Thanks! I may not be 
+        resposive most of the time as I go to a boarding college but I
+         will appreciate your advices on both matters.--><!doctype html>
+<html>
+ <head> 
+  <title>www.Kareem-Online-Shopping.com</title> 
+  <style>
+      /* Created by 👻Go0rsk1i 👻 */
+
+/* Most of you may already have experience as to how this is made,
+but for those new like me, I have named classes according to their
+function for convenience. If you still dont understand, I suggest 
+seeing examples of radio and checkbox on ws3 schools website, hope 
+it helps!*/
+  
+  .navdefault{
+  padding: 0px;
+margin-left:  0px;}
+.btndefault{
+  padding: 0;
+  margin-left: -60.5px;
+margin-top: 0px;}
+.default{
+  margin-right: 0px;
+  padding-left:  0px;
+margin-right: 0px;}
+
+/*Please ignore these default classes as I had to manage setting a default position.
+If you could, please remove styling from .topnav
+to .dropdown:hover .dropbtn, and then see why I changed values.
+My question is a bit complex, but how do I set all nav text by default 
+to extreme left of page, so the code doesnt get ugly and cramped?*/
+  
+  
+.topnav{
+  background-color: purple;
+  overflow: hidden;
+  padding: 0;}
+
+.topnav a {
+ margin-bottom: -8px; 
+ float: left;
+  color: #ffe6e6;
+ font-family: "Lobster", cursive; text-align: center;
+  padding: 16px 28.5px ;
+  text-style: italic;
+ text-decoration: none;
+ text-weight: bolder;
+  font-size: 30px;
+padding-bottom: 10px;}
+.topnav a:hover {
+  background-color: #ffe6e6 ;
+  color: purple;
+padding-bottom: 18px; }
+ 
+  .topnav a.active {
+  background-color: #ffe6e6 ;
+  color: purple;}
+
+.dropbtn {
+margin-right: -25px;
+margin-left: 0px;
+padding: 0px 5px 0px 0px;
+ padding-bottom: 0px;
+  background-color: purple;
+  color: pink;
+  font-size: 18px;
+  border: none;}
+.dropdown:before {
+    content: "";
+    position: absolute; 
+    right: 28px;
+    top: 58px;
+    width: 0; 
+    height: 0; 
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-top: 7px solid #ecf;
+}
+
+.dropdown {
+  position: static;
+  display: inline-block;}
+
+
+.dropdown-content {
+  display: none;
+margin-right: 20px;
+  position: absolute;
+  padding: 0px 0px 0px 0px;
+  background-color: #f1f1f1;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+text-align: centre;}
+
+.dropdown-content a {
+ margin-left: -54px;
+  padding: 20px 45px 20px -0.5px;
+ background-color: #ecf;
+ width: 51px;
+ padding-left: -2px;
+ color: purple;
+ font-size: 18px;
+  text-decoration: none;
+  display: inline-block;
+  margin-left: 0px;}
+
+.dropdown-content a:hover {
+  background-color: #ffe6ff;
+  color: purple;}  
+.dropdown:hover .dropdown-content {
+  display: block;}
+
+.dropdown:hover .dropbtn {
+ colour: purple; background-color: #8000800;
+ }
+
+
+#search{
+ padding: 2.5px 0px 2.5px 0px;
+  margin-left: 86px;
+  text-indent: 40px;
+ color: white; border: 2px solid #ffe6e6;
+background-color: #800080;}
+#search:hover{
+  background-color: #ffe6e6;
+  border: 2px solid #800080;}
+#search::placeholder{
+  color: white;
+}
+h2  {
+font-size: 53px;font-family : "Dancing Script", cursive; 
+background-image: linear-gradient(to top right, purple -25%,#ffe6ff 63%, purple );
+ margin-left: 15px; margin-right: 15px; color: purple; border: 5px solid purple;
+text-shadow: 4px 0px 3px #f7ffe6; border-radius: 42%;}
+ body {
+font-size: 20px;font-family: 'Lobster Two', cursive;
+padding: 5px -20px; border: 8px double purple;
+color: purple; background-color: red;
+background-image: repeating-radial-gradient(white 16%, transparent 22%),
+repeating-radial-gradient(white 16%, transparent 22%);
+background-size: 60px 60px;
+background-position: 0 0, 30px 30px;}
+div{
+ margin-left: 0px;
+ padding-left: 60px;font-family: 'Lobster Two', cursive;font-size: 22px;}
+  
+h3 {
+font-style: italic; font-size: 26px; font-family: 'Lobster', cursive; 
+font-weight: bolder; background-color: #ffe6ff; margin-left: -45px;
+color: purple; padding: 20px 16px 20px 16px;}
+  .fill {
+ font-family: sans-serif; font-size: small; padding: 5px; 
+ margin-top: 10px; margin-right: none; margin-bottom: 3px; margin-left: 44px; text-align: center; 
+ border: 4px ridge purple; background-color: #f8ecec; }
+.switch {
+  position: relative;
+  display: inline-block;
+  -webkit-tap-highlight-color: transparent;
+  width: 50px;
+  height: 28px;
+margin-bottom: -25px;}
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.slider {
+  margin-bottom: 0px;
+    position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #800080;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 22px;
+  width: 22px;
+  left: 4px;
+  bottom: 3px;
+  background-color: #ffe6e6;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+input:checked + .slider {
+  background-color: #ffcccc;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%; 
+}
+input:checked + .slider:before {
+  -webkit-transform: translateX(22px);
+  -ms-transform: translateX(22px);
+  transform: translateX(22px);
+}
+p.optional {
+  text-indent: 8px;color: black;}
+  
+ input[type=tel] {
+ border: 1px solid purple; background-color: #f8ecec; margin-top: 3px; margin-right: none ; margin-bottom: none; margin-left: 28px; text-align: center;}
+ 
+input[type="radio"]{
+  outline: none !important;
+    border: none !important;
+box-shadow: none !important;
+background-color: transparent !important;}
+
+ .gender {
+  display: block;
+  position: relative;
+  -webkit-tap-highlight-color: transparent;
+  padding-left: 38px;
+  margin-bottom: -5px;
+ margin-left: 34px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.gender  input {
+   outline: green solid 3px;
+    border: 2px solid red;
+    box-shadow: none; 
+     background-color: white;
+  ppsition: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.first  {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 17px;
+  width: 17px;
+  margin-top: 7px;
+  margin-left: 3px;
+  
+  background-color: purple;
+  border-radius: 100%;
+}
+
+
+.gender:hover input ~ .first . {
+  background-color: purple;
+}
+
+
+.gender input:checked ~ .first  {
+  background-color: #ecf;
+}
+ 
+
+.first:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+
+.gender input:checked ~ .first:after {
+  display: block;
+}
+  
+.gender .first:after {
+  top: 12px;
+  left: 12px;
+  width: 8px;
+  height: 8px;
+ margin-bottom: -8px;
+  border-radius: 35%;
+  background: purple;
+}
+.age {
+  display: block;
+  position: relative;
+-webkit-tap-highlight-color: transparent;
+margin-left: 34px;
+  padding-left: 28px;
+  margin-bottom: -5px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.age input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.second {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 17px;
+  width: 17px;
+ margin-top: 7px;
+ margin-left: 3px;
+  background-color: purple;
+  border-radius: 100%;
+}
+
+.age:hover input ~ .second {
+  background-color: purple;
+}
+
+
+.age input:checked ~ .second {
+  background-color: #ecf;
+}
+ 
+
+.second:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+
+.age input:checked ~ .second:after {
+  display: block;
+}
+  
+.age .second:after {
+  top: 12px;
+  left: 12px;
+  width: 8px;
+  height: 8px;
+  border-radius: 35%;
+  background: purple;
+}
+
+.pay {
+  display: block;
+  position: relative;
+ -webkit-tap-highlight-color: transparent;
+  padding-left: 28px;
+  margin-left: 34px;
+  margin-bottom: -5px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.pay input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.third {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 17px;
+outline: none;
+  width: 17px;
+  margin-top: 7px;
+  margin-left: 3px;
+  background-color: purple;
+  border-radius: 100%;
+}
+
+.pay:hover input ~ .third {
+  background-color: purple;
+}
+
+
+.pay input:checked ~ .third {
+  background-color: #ecf;
+}
+ 
+
+.third:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+
+.pay input:checked ~ .third:after {
+  display: block;
+}
+  
+.pay .third:after {
+  top: 12px;
+  left: 12px;
+  width: 8px;
+  height: 8px;
+  border-radius: 35%;
+  background: purple;
+}
+
+#region {
+  margin-left: 60px;
+  background-color: #ffe6e6;
+}
+.interest {
+  display: block;
+  position: relative;
+-webkit-tap-highlight-color: transparent;
+ margin-left: 34px;
+  padding-left: 41px;
+  margin-bottom: 0px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.interest input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: ;
+  left: 0;
+  height: 18px;
+  width: 18px;
+  background-color: purple;
+  margin-top: 6.5px;
+  }
+
+.interest:hover input ~ .checkmark {
+  background-color: purple;
+}
+
+.interest input:checked ~ .checkmark {
+  background-color: #ecf;
+}
+
+
+.checkmark:after {
+  content: "✔";
+  position: absolute;
+  display: none;
+}
+.interest input:checked ~ .checkmark:after {
+  display: block;
+}
+
+
+.interest .checkmark:after {
+  left: 2px;
+  top: -10px;
+  width:.10px;
+  height: 8px;
+  border: none;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+
+ input[type=color] {
+    -webkit-appearance: none;   border: none;   width: 25px;   height: 25px; } input[type="color"]::-webkit-color-swatch-wrapper {   padding: 0; } input[type="color"]::-webkit-color-swatch {border: 3px solid purple;}   
+p.habibi{
+ font-size: 20px; background-color: #730090; text-align: center;
+  padding: 12px -4px 6px -4px; margin-left: -45px;}
+input[type=submit] {
+margin-left: 0px; font-size: large;font-style: italic; font-weight:bolder; font-family: cursive; color: #730090; background-color: #f7e6ff; 
+padding: 16px 8px 16px 8px; border: 6px outset #99003d; }
+h4 {
+ color: purple; margin-bottom: -10px;
+}
+ #benefits{
+  padding-left: 15px;
+ }
+  .end {
+   margin-left: 0px;
+    margin-right: 0px;
+  font-weight: bolder; text-align: center; background-color: #ffe6ff;
+     }
+     .copyright{
+       margin-left: 7px;
+     }
+  </style>
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width" initial-scale="1.0" <body> 
+ </head> 
+ <body> 
+  <div class="navdefault"> 
+   <div class="topnav"> 
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,600&amp;display=swap" rel="stylesheet"> 
+    <a class="homepage" href="#Homepage">Home</a> 
+    <a class="services " href="#Login">Services</a> 
+    <div class="dropdown"> 
+     <div class="btndefault"> 
+      <button class="dropbtn"><a href="#Faq">FAQ</a> </button> 
+      <div class="default"> 
+       <div class="dropdown-content"> 
+        <a href="#Return"> Return Policy </a> 
+        <a href="#disounts">Discounts &amp; Offers</a> 
+        <a href="#general">General Questions</a> 
+       </div> 
+      </div> 
+     </div> 
+    </div> 
+   </div> 
+  </div> 
+  <hr style="height:3px;;color:purple;background-color:purple;"> 
+  <input type="search" id="search" placeholder="Search Items..."> 
+  <hr style="height:3px;color:purple; background-color: purple;"> 
+  <center> 
+   <h2> 
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&amp;display=swap" rel="stylesheet"> <i> Kareem Online</i> </h2> 
+  </center> 
+  <div style="color: purple; background-color: #ffe6e6; padding-left:45px;"> 
+   <h3> 
+    <center> 
+     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,600&amp;display=swap" rel="stylesheet"> 
+     <em><b> "Anything, Anyhwere, Anytime !" </b></em> 
+    </center></h3> 
+   <hr style="height:1px;width:60%;color:purple; background-color:purple;"> 
+   <br> 
+   <br> 
+   <form action="/action_page.php" target="_blank" method="POST"> 
+    <b> E-mail : </b> 
+    <br> 
+    <input type="email" minlength="13" maxlength="23" required placeholder="example123@gmail.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" name="Email" class="fill"> 
+    <br> 
+    <br> 
+    <b> Username :</b> 
+    <br> 
+    <input type="text" name="username" placeholder="Nickname123" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{10,25}" required class="fill"> 
+    <br> 
+    <br> 
+    <b> Password : </b> 
+    <br> 
+    <input type="password" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,12}" required placeholder="[a-z] [A-Z] [1-9]" class="fill"> 
+    <br> 
+    <br> 
+    <a href="Forgot password?"><small><u>Forgot password?</u></small></a> 
+    <br> 
+    <br> 
+    <br> 
+    <label class="switch"><br> <input type="checkbox"> <span class="slider round"></span> </label> 
+    <br>Save Password ? 
+    <br> 
+    <br> 
+    <br> 
+    <p class="optional"><b>Optional below:</b> <small><br>(We highly recommend to fill the optional section so we can display items matching the criteria provided by you)</small></p> 
+    <br> 
+    <p style="margin-left:2%;"> <b> Your phone number :</b> <br> <input type="tel" name="phone" pattern="[0]{1}[5]{1}[1-9]{1}-[0-9]{3}-[0-9]{4}" placeholder="053-224-36487"> </p> 
+    <br> 
+    <b>Gender :</b> 
+    <br> 
+    <br> 
+    <label class="gender">Male <input type="radio" name="radio" > <span class="first"></span></label> 
+    <br> 
+    <label class="gender">Female <input type="radio" name="radio"> <span class="first"></span></label> 
+    <br> 
+    <label class="gender">Other <input type="radio" name="radio"> <span class="first"></span></label> 
+    <br> 
+    <br> 
+    <b>Age Range :</b> 
+    <br> 
+    <br> 
+    <label class="age">Teenager (13-19) <input type="radio" name="radio2"> <span class="second"></span> </label> 
+    <br> 
+    <label class="age"> Adult (20-39) <input type="radio" name="radio2"> <span class="second"></span> </label> 
+    <br> 
+    <label class="age">Middle Age (40-59) <input type="radio" name="radio2"> <span class="second"> </span> </label> 
+    <br> 
+    <label class="age">Senior Age (60+) <input type="radio" name="radio2"> <span class="second"></span> </label> 
+    <br> 
+    <br> 
+    <b>Payment method:</b> 
+    <br>(Can be changed later) 
+    <br> 
+    <br> 
+    <label class="pay">Credit Card <input type="radio" name="radio3"> <span class="third"> </span> </label> 
+    <br> 
+    <label class="pay">Debit Card <input type="radio" name="radio3"> <span class="third"></span> </label> 
+    <br> 
+    <label class="pay">Cash on delivery<input type="radio" name="radio3"> <span class="third"></span> </label> 
+    <br> 
+    <br> 
+    <br> 
+    <b>Select Region:</b> 
+    <br> 
+    <select><optgroup label="Region" id="region"> <option value="Middleast">Middle East</option> <option value="Asia">Asia</option> <option value="America">America</option> <option value="Europe">Europe</option> </optgroup></select> 
+    <br> 
+    <br> 
+    <b>Interests:</b> 
+    <br> 
+    <br> 
+    <label class="interest">Toys <input type="checkbox"> <span class="checkmark"></span></label> 
+    <br> 
+    <label class="interest">Fashion <input type="checkbox"> <span class="checkmark"></span></label> 
+    <br> 
+    <label class="interest"> Technology <input type="checkbox"> <span class="checkmark"></span> </label> 
+    <br> 
+    <label class="interest">Household Items <input type="checkbox"> <span class="checkmark"> </span> </label> 
+    <br> 
+    <label class="interest">Pharmaceuticals <input type="checkbox"> <span class="checkmark"></span> </label> 
+    <br> 
+    <label class="interest"> Gardening <input type="checkbox"> <span class="checkmark"></span> </label> 
+    <br> 
+    <label class="interest">Groceries <input type="checkbox"> <span class="checkmark"> </span> </label> 
+    <br> 
+    <label class="interest">Pets <input type="checkbox"> <span class="checkmark"></span> </label> 
+    <br> 
+    <br> 
+    <label for="favcolor"><b>Select your favorite color: </b></label> 
+    <input type="color" id="favcolor" name="favcolor" value="#ff0000" class="color"> 
+    <br> 
+    <br> 
+    <br> 
+    <br> 
+    <br> 
+    <p class="habibi"> <input type="submit" value="Yalla Habibi !"></p> 
+    <br> 
+    <br> 
+    <h4> <b> First time here? </b></h4> 
+    <b>–&gt;<a href="Sign up now" target="_blank"><small> Sign up now!</small></a> </b> 
+    <br> 
+    <br> 
+   </form> 
+  </div> 
+  <p class="end"> 
+   <link href="https://fonts.googleapis.com/css2?family=Lobster+Two&amp;display=swap" rel="stylesheet"> <br>Enjoy the multiple benefits of our app <a href="Kareem app"> KareemOnline!</a><br><br> </p> 
+  <div id="benefits"> 
+   <li> <b>Half the price in our apps! :</b><br> Our app provides special discounts, coupons and excellent discount deals. New Users are also provided with "Starter's User pack" to get them started. <br> <br> </li> 
+   <li><b>We want to hear your say: </b><br> We will be able to contact you easily via Gmail. Mobile numbers can also be added in app for customer's convenience.</li> 
+   <br> 
+   <li> <b> Double the fun, double the discount! :</b><br> Enjoy playing a variety of fun games from our app and win discount coupons, with upto 80% off! <br> <br></li> 
+   <li> <b> Be the first to know:</b><br>Receive notification about ongoing deals and exclusive items. <br> <br> </li> 
+   <li> <b>Can't remember the name ?: </b><br>Dont worry, our app provides search using camera or by scanning QR code on products. <p></p> <br><br><span style="color:grey"> <br> </span></li> 
+  </div> 
+  <center> 
+   <hr style="width:100%;height:1px;color:purple;background-color:purple;"> 
+   <p class="copyright" style="color:purple;"><i>Kareem Online© 2021 <br> For questions and inquiries, Contact us at our homepage <a href="www.KareemOnlineShopping.com">www.KareemOnlineShopping.com</a></i> </p> 
+  </center> 
+  <p></p> 
+ </body>
+</html>
